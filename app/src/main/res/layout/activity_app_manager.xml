@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:heima="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:text="软件管理" />
+
+    <com.itheima.mobilesafe.view.ProgressStatusView
+        android:id="@+id/psv_rom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        heima:psvText="内存：" />
+
+    <com.itheima.mobilesafe.view.ProgressStatusView
+        android:id="@+id/psv_sd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        heima:psvText="SD卡：" />
+
+
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/lv_app_manager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

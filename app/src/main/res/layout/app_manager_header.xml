@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/tv_header_title"
+    android:padding="8dp"
+    android:background="#FFCED3D6"
+    android:text="系统应用(30个)"
+    android:layout_height="wrap_content" />
+    
+

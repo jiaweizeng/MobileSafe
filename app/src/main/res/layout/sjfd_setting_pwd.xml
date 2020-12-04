@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/dialog_title_default_icon"
+        android:drawablePadding="4dp"
+        android:padding="4dp"
+        android:text="初始化密码设置"
+        android:textColor="#AA000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+       android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码" />
+
+    <EditText
+        android:id="@+id/et_comfirm_pwd"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="请确认密码" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <Button
+            style="@style/BtnOkStyle"
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="确定"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/BtnCancelStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

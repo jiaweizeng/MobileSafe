@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_setting_title"
+        style="@style/TitleBarStyle"
+        android:gravity="center_vertical"
+        android:text="2.手机卡绑定" />
+
+    <TextView
+        style="@style/TextNormal"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:text="通过绑定SIM卡:\n下次手机重启时如果发现SIM变化,就会发送报警短信" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="4dp" >
+
+        <Button
+            style="@style/BtnOkStyle"
+            android:id="@+id/btn_bind_sim"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_centerVertical="true"
+            android:drawablePadding="4dp"
+            android:padding="4dp"
+            android:text="点击绑定/解绑SIM卡" />
+
+        <ImageView
+            android:id="@+id/iv_bind_status"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/unlock" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/step_2" />
+
+        
+        
+        <LinearLayout
+            android:id="@+id/rl_dot_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_dot_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_dot_selected" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_dot_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_dot_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_dot_normal" />
+        </LinearLayout>
+
+        <Button
+            style="@style/BtnNetStep"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/rl_dot_container"
+            android:text="下一步" />
+        
+        <Button
+            style="@style/BtnPreStep"
+            android:layout_alignParentBottom="true"
+            android:text="上一步" />
+    </RelativeLayout>
+
+</LinearLayout>

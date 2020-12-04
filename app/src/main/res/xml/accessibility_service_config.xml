@@ -1,0 +1,11 @@
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/accessibility_service_description"
+    android:accessibilityEventTypes="typeWindowStateChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:notificationTimeout="0"
+/>
+
+<!--  android:description="@string/accessibility_service_description" 描述信息
+    android:accessibilityEventTypes="typeWindowStateChanged"  监听什么事件类型，此处监听的是窗口改变动作
+    android:accessibilityFeedbackType="feedbackGeneric" 如果出现了这个动作，怎么通知， 方法回调
+    android:notificationTimeout="0" 间隔多久。 -->

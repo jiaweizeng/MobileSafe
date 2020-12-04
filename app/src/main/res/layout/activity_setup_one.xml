@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_setting_title"
+        style="@style/TitleBarStyle"
+        android:gravity="center_vertical"
+        android:text="1.欢迎使用手机防盗" />
+
+    <TextView
+        style="@style/TextNormal"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:text="您的手机防盗卫士:" />
+
+    <TextView
+        style="@style/TipText"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="4dp"
+        android:padding="4dp"
+        android:text="SIM卡变更报警" />
+
+    <TextView
+        style="@style/TipText"
+        android:drawablePadding="4dp"
+        android:padding="4dp"
+        android:text="GPS追踪" />
+
+    <TextView
+        style="@style/TipText"
+        android:drawablePadding="4dp"
+        android:padding="4dp"
+        android:text="远程锁屏" />
+
+    <TextView
+        style="@style/TipText"
+        android:drawablePadding="4dp"
+        android:padding="4dp"
+        android:text="远程销毁数据" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/step_1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/rl_dot_container"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_dot_selected" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_dot_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_dot_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_dot_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_dot_normal" />
+        </LinearLayout>
+
+        <Button
+            style="@style/BtnNetStep"
+            android:layout_alignRight="@id/rl_dot_container"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="下一步" />
+    </RelativeLayout>
+
+</LinearLayout>

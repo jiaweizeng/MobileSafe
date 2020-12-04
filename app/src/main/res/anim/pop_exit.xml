@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Animation for when a dock window at the bottom of the screen is entering. -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@interpolator/anticipate" >
+
+        <translate
+        android:duration="250"
+        android:fromXDelta="0"
+        android:toXDelta="100%" />
+
+</set>

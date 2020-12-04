@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:heima="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/TitleBarStyle"
+            android:text="进程管理" />
+
+        <ImageView
+            android:id="@+id/iv_clean_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/process_clean_selector" />
+    </RelativeLayout>
+
+    <com.itheima.mobilesafe.view.ProgressStatusView
+        android:id="@+id/psv_process_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        heima:psvText="进程数：" />
+
+    <com.itheima.mobilesafe.view.ProgressStatusView
+        android:id="@+id/psv_process_memory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        heima:psvText="内存：" />
+
+    <include layout="@layout/loading_layout" />
+
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/lv_process"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <Button
+            android:id="@+id/btn_all"
+            style="@style/BtnCancelStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="全选" />
+
+        <Button
+            android:id="@+id/btn_reverse"
+            style="@style/BtnCancelStyle"
+            android:layout_width="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="反选" />
+    </LinearLayout>
+
+</LinearLayout>

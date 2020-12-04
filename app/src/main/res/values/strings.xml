@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MobileSafe</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="description">开启设备管理器</string>
+
+    <string name="label">保护您的手机</string>
+
+    <string name="accessibility_service_label">Bala手机卫士程序锁</string>
+
+    <string name="accessibility_service_description">Bala手机卫士保护您的手机应用</string>
+
+    <string name="crash_toast_text">Ooooops ! I crashed, but a report has been sent to my developer to help fix the issue !</string>
+
+    <string name="crash_dialog_title">CrashTest has crashed</string>
+
+    <string name="crash_dialog_text">An unexpected error occurred forcing theapplication to stop. Please help us fix this by sending us error data,all you have to do is click OK.</string>
+
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+
+    <string name="crash_dialog_ok_toast">Thank you !</string>
+
+    <string name="crash_user_email_label">email lable:</string>
+</resources>

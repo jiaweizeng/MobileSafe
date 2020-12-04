@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:itheima="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:background="#429ED6"
+        android:text="手机杀毒" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <!-- 这是扫描的容器 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_scan"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#429ED6" >
+
+            <com.github.lzyzsd.circleprogress.ArcProgress
+                android:id="@+id/arc_progress"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:background="#429ED6"
+                itheima:arc_bottom_text="扫描中"
+                itheima:arc_bottom_text_size="14sp"
+                itheima:arc_progress="55"
+                itheima:arc_stroke_width="10dp"
+                itheima:arc_suffix_text_padding="10dp"
+                itheima:arc_text_color="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/arc_progress"
+                android:layout_centerHorizontal="true"
+                android:text="浏览器"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <!-- 这是扫描完成的容器 -->
+
+        <RelativeLayout
+            android:id="@+id/ll_result"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#429ED6"
+            android:visibility="gone"  >
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您的手机很安全"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_rescan"
+                    style="@style/BtnOkStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="重新扫描" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 以下是开门&关门动画的容器代码 -->
+
+        <LinearLayout
+            android:id="@+id/ll_door"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

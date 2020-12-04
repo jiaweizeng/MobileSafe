@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:heima="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:text="常用工具" />
+
+    <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_number_loc"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        heima:sivToggleVisiable="false"
+        android:layout_height="wrap_content"
+        heima:sivBackground="first"
+        heima:sivText="号码归属地查询" />
+
+    <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_common_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        heima:sivBackground="last"
+        heima:sivText="常用号码查询"
+        heima:sivToggleVisiable="false" />
+
+    <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_sms_backup"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        heima:sivToggleVisiable="false"
+        android:layout_height="wrap_content"
+        heima:sivBackground="first"
+        heima:sivText="短信备份" />
+
+    <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_sms_restore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        heima:sivBackground="last"
+        heima:sivText="短信还原"
+        heima:sivToggleVisiable="false" />
+    
+    
+    
+    <!-- 以下内容属于程序锁 -->
+     <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_app_lock"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        heima:sivToggleVisiable="false"
+        android:layout_height="wrap_content"
+        heima:sivBackground="first"
+        heima:sivText="程序锁" />
+     <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_watch_dog01"
+        android:layout_width="match_parent"
+        heima:sivToggleVisiable="true"
+        android:layout_height="wrap_content"
+        heima:sivBackground="middle"
+        heima:sivText="开启电子狗服务1" />
+
+    <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_watch_dog02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        heima:sivBackground="last"
+        heima:sivText="开启电子狗服务2"
+        heima:sivToggleVisiable="true" />
+
+</LinearLayout>

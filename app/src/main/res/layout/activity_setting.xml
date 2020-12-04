@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:heima="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_setting_title"
+        style="@style/TitleBarStyle"
+        android:text="设置中心" />
+
+    <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        heima:sivBackground="first"
+        heima:sivText="自动更新设置" />
+
+    <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_sms_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        heima:sivBackground="middle"
+        heima:sivText="骚扰拦截设置"
+        heima:sivToggleStatus="false" />
+    
+      <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_auto_clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        heima:sivBackground="last"
+        heima:sivText="锁屏清理内存"
+        heima:sivToggleStatus="false" />
+    
+    <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_number_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        heima:sivBackground="first"
+        heima:sivText="归属地显示设置" />
+
+    <com.bala.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_number_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        heima:sivToggleVisiable="false"
+        heima:sivBackground="last"
+        heima:sivText="归属地风格设置"/>
+
+   
+
+</LinearLayout>

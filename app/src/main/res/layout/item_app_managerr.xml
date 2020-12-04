@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_app_icon" >
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            style="@style/TextNormal"
+            android:layout_width="wrap_content"
+            android:text="应用名称" />
+
+        <TextView
+            android:id="@+id/tv_app_install"
+            style="@style/TextNormal"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_app_name"
+            android:text="安装位置"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_app_space"
+            style="@style/TextNormal"
+            android:layout_width="wrap_content"
+            android:layout_alignBaseline="@id/tv_app_install"
+            android:layout_alignParentRight="true"
+            android:text="150 KB"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
